@@ -1,0 +1,66 @@
+@model IEnumerable<Vistoria>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Vistorias</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Criar Novo</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veiculo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NivelRuido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resultado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observacoes)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Veiculo.Tie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NivelRuido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Resultado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observacoes)
+        </td>
+
+        <td>
+            <a asp-controller="Vistoria" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a> |
+            <a asp-controller="Vistoria" asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> |
+            <a asp-controller="Vistoria" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>

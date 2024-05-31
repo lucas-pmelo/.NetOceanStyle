@@ -1,0 +1,39 @@
+@model InspetoresVistorias
+
+@{
+    ViewBag.Title = "Criar Inspetores e suas Vistorias";
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Criar</h1>
+<h2>Inspetor e sua vistoria</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="InspetorId" class="control-label"></label>
+                <select asp-for="InspetorId" class="form-control" asp-items="@(new SelectList(ViewBag.Inspetores, "Id", "Nome"))"></select>
+                <span asp-validation-for="InspetorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VistoriaId" class="control-label"></label>
+                <select asp-for="VistoriaId" class="form-control" asp-items="@(new SelectList(ViewBag.Vistorias, "Id", "Id"))"></select>
+                <span asp-validation-for="VistoriaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,62 @@
+@model IEnumerable<Endereco>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Endereços</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Criar Novo</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Rua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </th>
+        <th>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rua)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cep)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cidade.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empresa.Nome)
+        </td>
+
+        <td>
+            <a asp-controller="Endereco" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a> |
+            <a asp-controller="Endereco" asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> |
+            <a asp-controller="Endereco" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>

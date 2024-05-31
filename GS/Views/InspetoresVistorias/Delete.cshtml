@@ -1,0 +1,32 @@
+@model InspetoresVistorias
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Delete</h1>
+<h2>Inspetore e sua vistoria</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Inspetor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Inspetor.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VistoriaId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VistoriaId)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-info">Voltar</a>
+    </form>
+</div>

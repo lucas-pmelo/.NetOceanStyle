@@ -1,0 +1,27 @@
+@model InspetoresVistorias
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detalhes</h1>
+<h2>Inspetor e sua visita</h2>
+
+<div class="row">
+    <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Inspetor)
+        </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Inspetor.Nome)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Vistoria)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Vistoria.Id)
+    </dd>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+</div>

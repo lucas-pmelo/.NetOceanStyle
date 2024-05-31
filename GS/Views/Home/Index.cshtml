@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section -->
+<div class="jumbotron jumbotron-fluid bg-primary text-white text-center">
+    <div class="container">
+        <h1 class="display-4">Bem-vindo ao Ocean Style</h1>
+        <p class="lead">Gerencie endereços, veículos, empresas e cidades de forma eficiente e integrada para ajudar os oceanos.</p>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <i class="fas fa-car fa-3x text-primary mb-3"></i>
+                    <h5 class="card-title">Veículos</h5>
+                    <p class="card-text">Mantenha o controle sobre todos os veículos associados à sua empresa.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="@Url.Action("Index", "Veiculo")" class="btn btn-primary">Ver Veículos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                    <h5 class="card-title">Empresas</h5>
+                    <p class="card-text">Gerencie informações e detalhes das empresas de maneira eficiente.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="@Url.Action("Index", "Empresa")" class="btn btn-success">Ver Empresas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <i class="fas fa-map-marked-alt fa-3x text-primary mb-3"></i>
+                    <h5 class="card-title">Vistorias</h5>
+                    <p class="card-text">Gerencie todas as vistorias de maneira organizada e fácil de acessar.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="@Url.Action("Index", "Vistoria")" class="btn btn-warning">Ver Vistorias</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <i class="fas fa-city fa-3x text-primary mb-3"></i>
+                    <h5 class="card-title">Inspetores</h5>
+                    <p class="card-text">Gerencie os inspetores que irão analisar seu veículo.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="@Url.Action("Index", "Inspetor")" class="btn btn-danger">Ver Inspetores</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Sobre o Projeto</h2>
+                <p class="lead">O objetivo desta solução é identificar e monitorar veículos aquáticos que ultrapassam os limites de ruído durante a navegação, já que o barulho emitido pelos barcos prejudica significativamente a vida marinha. Para alcançar essa meta, propomos a implementação de uma vistoria obrigatória para todos os barcos, com o propósito de verificar suas condições acústicas.</p>
+                                
+                <p class="lead">Durante a vistoria, será medido o nível de ruído emitido pelo barco. Se o barco emitir um ruído igual ou superior a 100 dB, será reprovado na vistoria. Os proprietários dos barcos reprovados deverão realizar melhorias no motor ou substituí-lo, conforme necessário, para reduzir o impacto negativo sobre a vida marinha.</p>
+                                
+                <p class="lead">Esta medida visa mitigar a poluição sonora nos oceanos, protegendo a biodiversidade marinha e promovendo a sustentabilidade dos ecossistemas aquáticos.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x700" class="img-fluid" alt="Ocean Style">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Ocean Style. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}

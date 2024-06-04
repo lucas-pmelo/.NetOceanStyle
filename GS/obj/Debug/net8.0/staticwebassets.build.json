@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ASN/EyIFHpWcNClD+y3U1JrH9up0AfWMrxvNy/XjYww=",
+  "Hash": "mKqP60rdx8+TQjMrRmYqSJBxhrmdt0iZNKVE3A3z7CU=",
   "Source": "GS",
   "BasePath": "_content/GS",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\luuhc\\Desktop\\PROGRAMAÇÃO\\Faculdade\\Projetos\\.net\\GS\\GS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GS.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\luuhc\\Desktop\\PROGRAMAÇÃO\\Faculdade\\Projetos\\.net\\GS\\GS\\wwwroot\\assets\\Ocean_500_x_700_px.png",
+      "SourceId": "GS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luuhc\\Desktop\\PROGRAMAÇÃO\\Faculdade\\Projetos\\.net\\GS\\GS\\wwwroot\\",
+      "BasePath": "_content/GS",
+      "RelativePath": "assets/Ocean_500_x_700_px.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Ocean_500_x_700_px.png"
     },
     {
       "Identity": "C:\\Users\\luuhc\\Desktop\\PROGRAMAÇÃO\\Faculdade\\Projetos\\.net\\GS\\GS\\wwwroot\\css\\site.css",

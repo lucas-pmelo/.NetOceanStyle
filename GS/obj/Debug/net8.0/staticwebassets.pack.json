@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\GS.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\luuhc\\Desktop\\PROGRAMAÇÃO\\Faculdade\\Projetos\\.net\\GS\\GS\\wwwroot\\assets\\Ocean_500_x_700_px.png",
+      "PackagePath": "staticwebassets\\assets\\Ocean_500_x_700_px.png"
+    },
+    {
       "Id": "C:\\Users\\luuhc\\Desktop\\PROGRAMAÇÃO\\Faculdade\\Projetos\\.net\\GS\\GS\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

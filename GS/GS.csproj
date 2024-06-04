@@ -33,4 +33,8 @@
       <Folder Include="Views\Veiculo\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\assets\Ocean_500_x_700_px.png" />
+    </ItemGroup>
+
 </Project>
